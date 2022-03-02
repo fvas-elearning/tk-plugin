@@ -1,23 +1,30 @@
 {
-    "name": "ttek/tk-plugin",
-    "type": "library",
-    "description": "Manage and add plugin functionality to a site",
-    "keywords": ["tropotek", "plugin"],
-    "time": "2019-04-09",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Michael Mifsud",
-            "email": "info@tropotek.com.au",
-            "homepage": "http://www.tropotek.com/"
-        }
-    ],
-    "autoload": {
-        "psr-0": {
-            "Tk\\": ""
-        }
-    },
-    "require": {
-        "ttek/tk-framework": "~3.0.0"
+  "name": "uom/tk-plugin",
+  "type": "library",
+  "description": "Manage and add plugin functionality to a site",
+  "keywords": [
+    "tropotek",
+    "plugin"
+  ],
+  "time": "2019-04-09",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Michael Mifsud",
+      "homepage": "http://www.tropotek.com/"
     }
+  ],
+  "autoload": {
+    "psr-0": {
+      "Tk\\": ""
+    }
+  },
+  "require": {
+    "uom/tk-framework": "~3.0.0"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "3.2.x-dev"
+    }
+  }
 }

@@ -42,6 +42,11 @@ abstract class Iface
      */
     protected $pluginFactory = null;
 
+    /**
+     * @var \Tk\Db\Data
+     */
+    protected $_data = null;
+
 
     /**
      * @param $id
@@ -214,7 +219,10 @@ abstract class Iface
      */
     public function getData()
     {
-        return \Tk\Db\Data::create($this->getName());
+        if (!$this->_data) {
+            $this->_data = \Tk\Db\Data::create($this->getName());
+        }
+        return $this->_data;
     }
 
     /**
